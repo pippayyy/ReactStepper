@@ -1,0 +1,308 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/*
+Global CSS used across the csdsit files
+*/
+/* 
+    Created on : 24 Feb 2023, 09:28:43
+    @author Pip Austin <philippa.austin@vodafone.com>
+*/
+
+body {
+  background-image: linear-gradient(to top right, #00b0ca, #d394c3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: bolder;
+}
+
+.mainform {
+  background: white;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.mainblock {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  /*overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 85vh;
+	width: 100%;*/
+}
+
+.link-primary:link {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.link-primary:visited {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.link-primary:hover {
+  color: black;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.breadcrumbDividerClass {
+  --bs-breadcrumb-divider: ">";
+}
+
+.wrapword {
+  white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+  white-space: -webkit-pre-wrap; /* Chrome & Safari */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  white-space: pre-wrap; /* CSS3 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  word-break: break-all;
+  white-space: normal;
+}
+
+.breadcrumbContainer {
+  background-image: linear-gradient(to top right, #00b0ca, #d394c3);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 10000px;
+  position: sticky;
+  /*top: 59px;*/
+}
+
+.notbold {
+  font-weight: normal;
+}
+
+.buttonSave:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.required:before {
+  content: "*";
+  font-weight: bold;
+}
+
+.fixed {
+  position: sticky !important;
+}
+
+.navbar {
+  background-image: linear-gradient(to top right, #00b0ca, #d394c3);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 1000px;
+}
+
+.buttonSave {
+  background-image: linear-gradient(to top right, #00b0ca, #d394c3);
+  border-radius: 50px;
+  flex: 1 1 auto;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+}
+
+.buttonDelete {
+  border-radius: 50px;
+  flex: 1 1 auto;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+}
+
+.buttonClone {
+  border-radius: 50px;
+  flex: 1 1 auto;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+}
+
+.buttonMenu {
+  border-radius: 50px;
+  background-color: #7749f8;
+  flex: 1 1 auto;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-color: none;
+}
+
+.buttonMenuExport {
+  background-color: #00b0ca;
+  border-radius: 50px;
+  flex: 1 1 auto;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+}
+
+.buttonExport {
+  background-color: #00b0ca;
+  border-radius: 50px;
+  flex: 1 1 auto;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+}
+
+.navbar-nav > li {
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.dataTables_filter {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Circle buttons on main screens*/
+.btn-xl {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.button-nav {
+  background: linear-gradient(to top, #cccccc, #cccccc) repeat-x center;
+  background-size: 2px 2px;
+}
+
+.button-nav-first {
+  background: linear-gradient(to right, #ffffff 30%, #cccccc);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-nav-last {
+  background: linear-gradient(to left, #ffffff 30%, #cccccc);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.buttonGrey {
+  background-image: linear-gradient(to top right, #bfbfbf, #d9d9d9);
+  border-radius: 50px;
+  flex: 1 1 auto;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+}
+
+.buttonGrey:hover {
+  background-image: linear-gradient(to top right, #00b0ca, #d394c3);
+  border-radius: 50px;
+  flex: 1 1 auto;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  background-position: right center;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+/* Used on review page when status is not design */
+.buttonGreyDisabled {
+  background-image: linear-gradient(to top right, #bfbfbf, #d9d9d9);
+  border-radius: 50px;
+  flex: 1 1 auto;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: grey;
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  pointer-events: none;
+  cursor: default;
+}
+
+.labelTitle {
+  font-weight: normal;
+}
+
+/* Not currently used - small badge, could be used in accordion*/
+.badge {
+  height: 30px;
+  width: 30px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: lightblue;
+}
+
+/* breadcrumb container - spacing and format style*/
+.breadcrumbContainer {
+  background-image: linear-gradient(to top right, #00b0ca, #d394c3);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto 10000px;
+  position: sticky;
+  /* the value of 42 is a default and is overwritten and dynamically populated by breadcrumbAlign in csdsit_global_javascript */
+  top: 42px;
+}
+
+/* Alter btn-light for use in main section pages to add white outline on hover */
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active,
+.btn-light:active:focus,
+.btn-light.active {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
+/* Unsure if used */
+.center {
+  text-align: center;
+  width: 100%;
+}
